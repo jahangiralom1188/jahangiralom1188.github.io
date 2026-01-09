@@ -2,56 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me | Jahangir Alom</title>
+    <title>Jahangir Alom | Personal Portfolio</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jahangir Alom – Computer Science Engineering student, aspiring developer, and music enthusiast.">
+    <meta name="author" content="Jahangir Alom">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
         }
 
-        header {
-            background-color: #1f2933;
-            color: white;
+        /* HERO SECTION */
+        .hero {
             text-align: center;
-            padding: 40px 20px;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
         }
 
-        header h1 {
+        .hero img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 42px;
         }
 
-        header p {
-            margin-top: 10px;
+        .hero p {
             font-size: 18px;
-            color: #d1d5db;
+            margin-top: 10px;
+            opacity: 0.9;
         }
 
+        /* MAIN CONTAINER */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            padding: 30px 20px;
         }
 
         section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            background: #020617;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
 
         h2 {
             margin-top: 0;
-            color: #1f2933;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 8px;
+            font-size: 26px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* PROFILE CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #1e293b, #020617);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(37,99,235,0.4);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
+
+        /* LIST */
         ul {
             padding-left: 20px;
         }
@@ -61,126 +109,153 @@
         }
 
         a {
-            color: #2563eb;
+            color: #60a5fa;
             text-decoration: none;
+            font-weight: 500;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        .profile-img {
-            text-align: center;
+        /* SOCIAL MEDIA */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .profile-img img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #1f2933;
-            margin-bottom: 10px;
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-links a i {
+            font-size: 18px;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+        .fbpage {
+            background: #4267B2;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
         }
 
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #1f2933;
-            color: #d1d5db;
+            padding: 20px;
+            background: #020617;
+            color: #9ca3af;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero">
+    <img src="profile.jpg" alt="Jahangir Alom Profile Photo">
     <h1>Jahangir Alom</h1>
-    <p>Computer Science Engineering Student | Programming & Music Enthusiast</p>
-</header>
+    <p>Computer Science Engineering Student • Aspiring Developer • Music Lover</p>
+</section>
 
 <div class="container">
 
-    <!-- PHOTO SECTION -->
-    <section class="profile-img">
-        <h2>My Photo</h2>
-        <img src="IMG20220608162923.jpg" alt="Jahangir Alom">
-        <p><strong>Jahangir Alom</strong></p>
-    </section>
-
+    <!-- ABOUT -->
     <section>
         <h2>About Me</h2>
         <p>
-            My name is <strong>Jahangir Alom</strong>, and I am a student of
-            <strong>Computer Science Engineering</strong>. I am currently continuing
-            my studies with a strong interest in technology and problem-solving.
-            I have completed an <strong>Post Graduate Diploma in Computer Applications (PGDCA)</strong>,
-            which included one year of structured computer training.
+            Hello! I’m <strong>Jahangir Alom</strong>, a Computer Science Engineering student
+            with a strong passion for programming, web development, and technology.
+        </p>
+        <p>
+            I have completed a <strong>Post Graduate Diploma in Computer Applications (PGDCA)</strong>,
+            gaining one year of hands-on experience in computing and software fundamentals.
         </p>
     </section>
 
+    <!-- PROFILE -->
     <section>
-        <h2>Education</h2>
+        <h2>My Profile</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🎓 Student</h3>
+                <p>Computer Science Engineering student with a strong technical foundation.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Developer</h3>
+                <p>Creating modern websites using HTML & CSS with clean UI design.</p>
+            </div>
+            <div class="card">
+                <h3>🎸 Musician</h3>
+                <p>Guitar player with 1.5 years of experience. Music inspires creativity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills & Interests</h2>
         <ul>
-            <li>Computer Science Engineering (Currently Studying)</li>
-            <li>Post Graduate Diploma in Computer Applications (PGDCA)</li>
-            <li>College: <strong>Hailakandi Polytechnic College</strong></li>
+            <li>HTML & CSS</li>
+            <li>Programming & Problem Solving</li>
+            <li>Web Development</li>
+            <li>Guitar & Music</li>
         </ul>
     </section>
 
+    <!-- CONTACT -->
     <section>
-        <h2>Projects</h2>
+        <h2>Contact Me</h2>
         <ul>
-            <li>Personal About Me Website</li>
-            <li>Basic HTML & CSS Projects</li>
-            <li>More projects coming soon...</li>
+            <li>📞 <a href="tel:+917637861188">+91 7637861188</a></li>
+            <li>📧 <a href="mailto:ja3174257@gmail.com">ja3174257@gmail.com</a></li>
+            <li>📍 Abhayapuri, Bongaigaon, Assam, India</li>
         </ul>
     </section>
 
+    <!-- SOCIAL MEDIA -->
     <section>
-        <h2>Skills & Hobbies</h2>
-        <ul>
-            <li>Programming & Coding</li>
-            <li>Guitar Playing (1.5 Years)</li>
-            <li>Music Lover</li>
-        </ul>
-    </section>
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a class="instagram" target="_blank"
+               href="https://www.instagram.com/_creative_world_of_jahan?igsh=eTBkOTBycm96dDhw">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
 
-    <!-- CONTACT SECTION -->
-    <section>
-        <h2>Contact Information</h2>
-        <ul>
-            <li>📞 Mobile:
-                <a href="tel:+917637861188">+91 7637861188</a>
-            </li>
+            <a class="fbpage" target="_blank"
+               href="https://www.facebook.com/share/1a368s9htQ/">
+                <i class="fab fa-facebook"></i> Facebook Page
+            </a>
 
-            <li>📧 Email:
-                <a href="mailto:ja3174257@gmail.com">ja3174257@gmail.com</a>
-            </li>
-
-            <li>💬 WhatsApp:
-                <a href="https://wa.me/917637861188" target="_blank">
-                    Chat on WhatsApp
-                </a>
-            </li>
-
-            <li>🏠 Address:
-                Abhayapuri, 783384, Bongaigaon (Assam)
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Social Media</h2>
-        <ul>
-            <li>Instagram: <a href="#" target="_blank">https://www.instagram.com/_creative_world_of_jahan?igsh=eTBkOTBycm96dDhw</a></li>
-            <li>Facebook: <a href="#" target="_blank">https://www.facebook.com/share/1D3cGi75KW/</a></li>
-            <li>FB Page: <a href="#" target="_blank">https://www.facebook.com/share/1a368s9htQ/</a></li>
-        </ul>
+            <a class="facebook" target="_blank"
+               href="https://www.facebook.com/share/1D3cGi75KW/">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
     </section>
 
 </div>
 
 <footer>
-    <p>© 2026 Jahangir Alom | Personal Website</p>
+    <p>© 2026 Jahangir Alom | Personal Portfolio | Thank You</p>
 </footer>
 
 </body>
