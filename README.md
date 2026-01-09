@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jahangir Alom | About Me</title>
+    <title>Jahangir Alom | Personal Portfolio</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jahangir Alom – Computer Science Engineering student, aspiring developer, and music enthusiast.">
+    <meta name="author" content="Jahangir Alom">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
@@ -70,7 +74,7 @@
             line-height: 1.7;
         }
 
-        /* HIGHLIGHT CARDS */
+        /* PROFILE CARDS */
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -104,7 +108,6 @@
             margin-bottom: 8px;
         }
 
-        /* CONTACT */
         a {
             color: #60a5fa;
             text-decoration: none;
@@ -113,6 +116,45 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* SOCIAL MEDIA */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-links a i {
+            font-size: 18px;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+        .fbpage {
+            background: #4267B2;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
         }
 
         footer {
@@ -127,63 +169,43 @@
 
 <body>
 
-<!-- HERO PROFILE -->
+<!-- HERO -->
 <section class="hero">
-    <img src="IMG20220608162923.jpg" alt="Jahangir Alom Profile Photo">
+    <img src="profile.jpg" alt="Jahangir Alom Profile Photo">
     <h1>Jahangir Alom</h1>
     <p>Computer Science Engineering Student • Aspiring Developer • Music Lover</p>
 </section>
 
 <div class="container">
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT -->
     <section>
         <h2>About Me</h2>
         <p>
-            Hello! I’m <strong>Jahangir Alom</strong>, a passionate and motivated
-            <strong>Computer Science Engineering student</strong> with a deep interest
-            in programming, web development, and modern technologies.
+            Hello! I’m <strong>Jahangir Alom</strong>, a Computer Science Engineering student
+            with a strong passion for programming, web development, and technology.
         </p>
-
         <p>
-            I have successfully completed a
-            <strong>Post Graduate Diploma in Computer Applications (PGDCA)</strong>,
-            where I gained one year of structured hands-on training in computer systems,
-            software tools, and programming fundamentals.
-        </p>
-
-        <p>
-            I enjoy solving problems, learning new technologies, and continuously
-            improving my skills to become a professional software developer.
+            I have completed a <strong>Post Graduate Diploma in Computer Applications (PGDCA)</strong>,
+            gaining one year of hands-on experience in computing and software fundamentals.
         </p>
     </section>
 
-    <!-- PROFILE HIGHLIGHTS -->
+    <!-- PROFILE -->
     <section>
         <h2>My Profile</h2>
         <div class="cards">
             <div class="card">
                 <h3>🎓 Student</h3>
-                <p>
-                    Currently pursuing Computer Science Engineering with a strong academic
-                    foundation in computing and programming.
-                </p>
+                <p>Computer Science Engineering student with a strong technical foundation.</p>
             </div>
-
             <div class="card">
                 <h3>💻 Developer</h3>
-                <p>
-                    Building projects using HTML, CSS, and core programming concepts.
-                    Passionate about clean and user-friendly design.
-                </p>
+                <p>Creating modern websites using HTML & CSS with clean UI design.</p>
             </div>
-
             <div class="card">
                 <h3>🎸 Musician</h3>
-                <p>
-                    Guitar player with 1.5 years of experience.
-                    Music fuels my creativity and focus.
-                </p>
+                <p>Guitar player with 1.5 years of experience. Music inspires creativity.</p>
             </div>
         </div>
     </section>
@@ -192,11 +214,10 @@
     <section>
         <h2>Skills & Interests</h2>
         <ul>
-            <li>HTML & CSS (Web Development)</li>
-            <li>Programming & Logical Thinking</li>
-            <li>Problem Solving</li>
-            <li>Guitar Playing & Music</li>
-            <li>Continuous Learning</li>
+            <li>HTML & CSS</li>
+            <li>Programming & Problem Solving</li>
+            <li>Web Development</li>
+            <li>Guitar & Music</li>
         </ul>
     </section>
 
@@ -206,9 +227,29 @@
         <ul>
             <li>📞 <a href="tel:+917637861188">+91 7637861188</a></li>
             <li>📧 <a href="mailto:ja3174257@gmail.com">ja3174257@gmail.com</a></li>
-            <li>💬 <a href="https://wa.me/917637861188" target="_blank">Chat on WhatsApp</a></li>
             <li>📍 Abhayapuri, Bongaigaon, Assam, India</li>
         </ul>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section>
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a class="instagram" target="_blank"
+               href="https://www.instagram.com/_creative_world_of_jahan?igsh=eTBkOTBycm96dDhw">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a class="fbpage" target="_blank"
+               href="https://www.facebook.com/share/1a368s9htQ/">
+                <i class="fab fa-facebook"></i> Facebook Page
+            </a>
+
+            <a class="facebook" target="_blank"
+               href="https://www.facebook.com/share/1D3cGi75KW/">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
     </section>
 
 </div>
